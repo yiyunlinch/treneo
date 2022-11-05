@@ -1,0 +1,849 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+
+
+
+}
+
+/* font-weight: 500; */
+/* font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320))); */
+
+/* Menu */
+
+.logo-style {
+  width: 12vw;
+  height: auto;
+  top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-style {
+  list-style-type: none;
+  background-color: white;
+}
+
+nav .items {
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  background-color: white;
+  z-index: 100;
+  display: none;
+  margin-top: -0.1vh;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+}
+
+nav div.items a {
+  color: #333333;
+  text-decoration: none;
+  font-family: "Montserrat", arial, sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+nav div.items a:hover {
+  color: #bf9e9f;
+  font-weight: 700;
+}
+
+nav div.items a.active {
+  color: #bf9e9f;
+  font-weight: 700;
+}
+
+nav .burger {
+  position: absolute;
+  top: 1vh;
+  right: 10vw;
+  font-size: 24px;
+  padding: 8px;
+  font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1600 - 320)));
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  color: #333333;
+  background-color: white;
+  text-decoration: none;
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 16px;
+  border: none;
+  outline: none;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  color: #bf9e9f;
+  font-weight: 700;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a background color on hover */
+.subnav-content a:hover {
+  color: #bf9e9f;
+  font-weight: 700;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+
+/* Titelbild */
+
+.titelbild {
+  width: 100%;
+  height: auto;
+}
+
+/* Seiteninhalte */
+
+/* Buttons */
+.buttonclass {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 6em;
+  background: transparent;
+  color: #f3efec;
+  background-color: #333333;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.buttonclass:hover,
+.buttonclass:active {
+  outline: none;
+  background: #5f5f5f;
+}
+
+p.buttonclass {
+  text-align: center;
+}
+
+/* Seiteninhalt-Breite */
+section.inhalt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: auto;
+}
+
+/* Überschriften und Lauftext */
+h1 {
+  font-family: ofelia-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #333333;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  font-size: calc(32px + (56 - 32) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h2 {
+  color: #333333;
+  font-family: ofelia-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h3 {
+  color: #333333;
+  font-family: ofelia-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));
+}
+
+a {
+  color: #333333;
+}
+
+section p {
+  color: #333333;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+}
+
+/* Seite "Preise" */
+.preise {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.preisbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60vw;
+  min-width: 20vw;
+  margin-top: 4vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  text-align: center;
+  background-color: white;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.preisbox p {
+  color: #333333;
+  font-family: proxima-nova, arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+}
+
+select {
+  background-color: #f3efec;
+  border: 1px solid #bf9e9f;
+  color: #807d7d;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+  height: 48px;
+  border-radius: 0.2em;
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-bottom: 2vh;
+  line-height: 22px;
+}
+
+select:focus {
+  border: 2px solid #bf9e9f;
+}
+
+select.paket {
+  color: red;
+}
+
+/*Dropdown*/
+
+/* Portfolio */
+/* Galerie*/
+
+.galeriestruktur {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+/* vier nebeneinanderliegende Kolonnen */
+.galerie-reihe {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.galerie-reihe img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Kontaktseite */
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: #333333;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+  line-height: 22px;
+  background-color: transparent;
+  border: thin solid #bf9e9f;
+  border-radius: 0.2em;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #c7a8ab;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+/* Google Maps Karte */
+.maps {
+  width: 100%;
+  height: 40vh;
+  border: 0;
+}
+
+/* Footer */
+.footer {
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  margin-top: 4vh;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333333;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+  margin-top: 0.5vh;
+}
+
+.footer p {
+  color: #333333;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+  margin-top: 0.5vh;
+}
+
+/* Instagram Logo */
+img.socialmedia {
+  width: 2vw;
+  height: auto;
+  margin-bottom: 0.2vh;
+}
+
+/* Seitenhintergrundfarbe */
+body {
+  background-color: #f3efec;
+}
+
+/* Menu Hintergrundfarbe */
+header {
+  background-color: white;
+  width: 100%;
+}
+
+/* Media Queries */
+
+/*Desktop*/
+@media screen and (min-width: 800px) {
+
+  /* Burger ausblenden */
+  .burger {
+    display: none;
+  }
+
+  nav div.items a {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  /* Menupunkte in einer Reihe anzeigen */
+  nav .items {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* Untermenu */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    left: 75vw;
+    width: 10%;
+    z-index: 1;
+  }
+
+  /* cindy morgenthaler Logo */
+  img.logo-menu {
+    width: 12vw;
+  }
+
+  .logo-style {
+    display: none;
+  }
+
+  /* Footer Menupunkte in einer Reihe */
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+  }
+
+  .footer p {
+    margin-right: 2vw;
+    margin-top: 0;
+  }
+
+  .footer a {
+    margin-right: 2vw;
+    margin-top: 0;
+  }
+
+  /* Instagram Icon */
+  img.socialmedia {
+    margin-bottom: 0;
+    margin-top: 0.6vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  /* Galerie zwei anstatt vier Reihen */
+  .galerie-reihe {
+    flex: 40%;
+    max-width: 40%;
+  }
+
+  /* Seiteninhalt-Breite */
+  section.inhalt {
+    width: 60vw;
+  }
+
+  /* Instagram Icon */
+  img.socialmedia {
+    width: 4vw;
+    height: auto;
+    margin-bottom: 0.4vh;
+  }
+
+  /* cindy morgenthaler logo */
+  .logo-style {
+    width: 20vw;
+    height: auto;
+    top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  img.logo-menu {
+    width: 1vh;
+    display: none;
+  }
+
+  nav .burger {
+    top: 0.3em;
+  }
+}
+
+/*Mobile */
+@media screen and (max-width: 480px) {
+
+  /* Galerie 1 Reihe */
+  .galerie-reihe {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  /* Seiteninhalt-Breite */
+  section.inhalt {
+    width: 60vw;
+  }
+
+  /* Instagram Icon */
+  img.socialmedia {
+    width: 5vw;
+    height: auto;
+    margin-bottom: 0.4vh;
+  }
+
+  /* cindy morgenthaler logo */
+  .logo-style {
+    width: 30vw;
+    height: auto;
+    top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  img.logo-menu {
+    display: none;
+  }
+}
+
+/* partner */
+
+.square-holder {
+  padding: 30px;
+  border: 1px solid #cecece;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  min-height: 200px;
+}
+
+.square-holder img {
+  max-width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.square-holder:hover img {
+  filter: none;
+}
+
+/*flipcard*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/*flipbox*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containerfb {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.card h2 {
+  margin: 0 0 0.5em 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin: 0 0 1em 0;
+}
+
+.card p {
+  margin: 0 0 1em 0;
+}
+
+.card {
+  margin: 0 1em;
+  background: #fafafa;
+  padding: 2em;
+  text-align: center;
+  position: relative;
+  transition: all 200ms;
+
+}
+
+.card:hover .flip {
+  transform: rotateX(0deg);
+}
+
+.flip {
+  background: #FFA500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100%;
+  transition: all 200ms;
+  padding: 2.5em 1.5em;
+  transform: rotateX(90deg);
+
+}
+
+.flip h2 {
+  font-size: 1.3em;
+  color: #FFFFFF;
+  margin: 0 0 2.5em 0;
+
+}
+
+
+
+/*flipbox*/
+
+
+#orangebackground {
+  contain: flex;
+  background-color: #FFA500;
+  width: 100%;
+}
+
+h2.orangeh2 {
+  color: white;
+}
+
+
+
+
+
+
+/*button*/
+
+.accordion {
+  background-color: #FFA500;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #FFB26E;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+.swissmaptext1 {
+  width: 100%;
+
+  /* The image used */
+  background-image: url("images/swissmap50.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.floatright {
+  float: right;
+  border: 1px dotted white;
+  margin: 0px 0px 15px 20px;
+}
+
+/*--buchen*/
+
+.containerbuchen {
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.elem {
+  margin: 50px;
+}
+
+
+.button {
+  color: orange;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 4px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 20px 15px 25px;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 20px;
+  background-color: orange;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+  text-align: center;
+  animation: minify .6s;
+  animation-fill-mode: forwards;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:hover:after {
+  animation: expand .6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+  0% {
+    height: 5px;
+    width: 34px;
+  }
+
+  50% {
+    height: 68px;
+    width: 68px;
+  }
+
+  100% {
+    height: 68px;
+    width: 100%;
+    left: -10px;
+    right: -10px;
+    background-color: orange;
+  }
+}
+
+@keyframes minify {
+  0% {
+    height: 68px;
+    width: 100%;
+    left: -10px;
+    right: -10px;
+    background-color: orange;
+  }
+
+  50% {
+    height: 68px;
+    width: 68px;
+  }
+
+  100% {
+    height: 5px;
+    width: 34px;
+    background-color: orange;
+  }
+}
