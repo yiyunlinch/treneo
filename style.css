@@ -62,12 +62,12 @@ nav div.items a {
 }
 
 nav div.items a:hover {
-  color: #bf9e9f;
+  color: #ff7f00;
   font-weight: 700;
 }
 
 nav div.items a.active {
-  color: #bf9e9f;
+  color: #ff7f00;
   font-weight: 700;
 }
 
@@ -98,7 +98,7 @@ nav .burger {
 /* Add a red background color to navigation links on hover */
 .navbar a:hover,
 .subnav:hover .subnavbtn {
-  color: #bf9e9f;
+  color: #ff7f00;
   font-weight: 700;
 }
 
@@ -119,7 +119,7 @@ nav .burger {
 
 /* Add a background color on hover */
 .subnav-content a:hover {
-  color: #bf9e9f;
+  color: #ff7f00;
   font-weight: 700;
 }
 
@@ -148,7 +148,7 @@ nav .burger {
   width: 6em;
   background: transparent;
   color: #f3efec;
-  background-color: #333333;
+  background-color: silver;
   border: none;
   border-radius: 0.2em;
   cursor: pointer;
@@ -158,7 +158,7 @@ nav .burger {
 .buttonclass:hover,
 .buttonclass:active {
   outline: none;
-  background: #5f5f5f;
+  background: #0080FF;
 }
 
 p.buttonclass {
@@ -170,6 +170,16 @@ section.inhalt {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70%;
+  margin: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: auto;
+}
+section.inhaltleft {
+  
+  
+  
   width: 70%;
   margin: auto;
   padding-top: 2vh;
@@ -385,7 +395,7 @@ img.socialmedia {
 
 /* Seitenhintergrundfarbe */
 body {
-  background-color: #f3efec;
+  background-color: white;
 }
 
 /* Menu Hintergrundfarbe */
@@ -476,7 +486,9 @@ header {
   section.inhalt {
     width: 60vw;
   }
-
+  section.inhaltleft {
+    width: 60vw;
+  }
   /* Instagram Icon */
   img.socialmedia {
     width: 4vw;
@@ -627,7 +639,7 @@ a {
 .containerfb {
   display: flex;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
 }
 
 .card h2 {
@@ -659,7 +671,7 @@ a {
 }
 
 .flip {
-  background: #FFA500;
+  background: #FF7f00;
   position: absolute;
   top: 0;
   left: 0;
@@ -686,7 +698,7 @@ a {
 
 #orangebackground {
   contain: flex;
-  background-color: #FFA500;
+  background-color: #FF7f00;
   width: 100%;
 }
 
@@ -695,6 +707,9 @@ h2.orangeh2 {
 }
 
 
+h3.orangeh3 {
+  color: white;
+}
 
 
 
@@ -702,7 +717,7 @@ h2.orangeh2 {
 /*button*/
 
 .accordion {
-  background-color: #FFA500;
+  background-color: #FF7F00;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -715,7 +730,7 @@ h2.orangeh2 {
 
 .active,
 .accordion:hover {
-  background-color: #FFB26E;
+  background-color: orange;
 }
 
 .panel {
@@ -733,6 +748,7 @@ h2.orangeh2 {
 
   /* The image used */
   background-image: url("images/swissmap50.png");
+  
 
   /* Set a specific height */
   min-height: 500px;
@@ -751,6 +767,7 @@ h2.orangeh2 {
   margin: 0px 0px 15px 20px;
 }
 
+
 /*--buchen*/
 
 .containerbuchen {
@@ -765,7 +782,7 @@ h2.orangeh2 {
 
 
 .button {
-  color: orange;
+  color: #0080FF;
   text-decoration: none;
   text-transform: uppercase;
   font-size: xx-large;
@@ -788,7 +805,7 @@ h2.orangeh2 {
   position: absolute;
   height: 5px;
   width: 20px;
-  background-color: orange;
+  background-color: #0080FF;
   bottom: -2px;
   left: 0;
   right: 0;
@@ -824,7 +841,7 @@ h2.orangeh2 {
     width: 100%;
     left: -10px;
     right: -10px;
-    background-color: orange;
+    background-color: #0080FF;
   }
 }
 
@@ -834,7 +851,7 @@ h2.orangeh2 {
     width: 100%;
     left: -10px;
     right: -10px;
-    background-color: orange;
+    background-color: #0080FF;
   }
 
   50% {
@@ -845,7 +862,7 @@ h2.orangeh2 {
   100% {
     height: 5px;
     width: 34px;
-    background-color: orange;
+    background-color: #0080FF;
   }
 }
 
@@ -862,14 +879,14 @@ h2.orangeh2 {
 
 #team .card {
   border-radius: 0;
-  box-shadow: 5px 5px 15px orange;
+  box-shadow: 5px 5px 15px #FF7F00;
   transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
 }
 
 #team .card:hover {
-  background: orange;
+  background: #FF7F00;
   color: #fff;
   border-radius: 5px;
   border: none;
