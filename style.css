@@ -86,7 +86,6 @@ nav .burger {
   background-color: white;
   text-decoration: none;
   font-family: "Montserrat", arial, sans-serif;
-  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));
   text-align: center;
   display: block;
   margin: auto;
@@ -176,10 +175,20 @@ section.inhalt {
   padding-bottom: 2vh;
   text-align: auto;
 }
+
 section.inhaltleft {
-  
-  
-  
+
+
+
+  width: 70%;
+  margin: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: auto;
+}
+
+section.inhaltright {
+  display:flex 
   width: 70%;
   margin: auto;
   padding-top: 2vh;
@@ -486,9 +495,11 @@ header {
   section.inhalt {
     width: 60vw;
   }
+
   section.inhaltleft {
     width: 60vw;
   }
+
   /* Instagram Icon */
   img.socialmedia {
     width: 4vw;
@@ -637,9 +648,9 @@ a {
 }
 
 .containerfb {
-  display: flex;
+  
   margin: 0 auto;
-  width: 100%;
+  width: 30%;
 }
 
 .card h2 {
@@ -647,6 +658,7 @@ a {
 }
 
 .card img {
+
   width: 100%;
   height: auto;
   margin: 0 0 1em 0;
@@ -748,7 +760,7 @@ h3.orangeh3 {
 
   /* The image used */
   background-image: url("images/swissmap50.png");
-  
+
 
   /* Set a specific height */
   min-height: 500px;
@@ -767,6 +779,13 @@ h3.orangeh3 {
   margin: 0px 0px 15px 20px;
 }
 
+.floatleft {
+  float: left;
+  border: 1px dotted white;
+  margin: 0px 0px 15px 20px;
+}
+
+
 
 /*--buchen*/
 
@@ -782,7 +801,7 @@ h3.orangeh3 {
 
 
 .button {
-  color: #0080FF;
+  color: #FF7F00;
   text-decoration: none;
   text-transform: uppercase;
   font-size: xx-large;
@@ -805,7 +824,7 @@ h3.orangeh3 {
   position: absolute;
   height: 5px;
   width: 20px;
-  background-color: #0080FF;
+  background-color: #FF7F00;
   bottom: -2px;
   left: 0;
   right: 0;
@@ -841,7 +860,7 @@ h3.orangeh3 {
     width: 100%;
     left: -10px;
     right: -10px;
-    background-color: #0080FF;
+    background-color: #FF7F00;
   }
 }
 
@@ -851,7 +870,7 @@ h3.orangeh3 {
     width: 100%;
     left: -10px;
     right: -10px;
-    background-color: #0080FF;
+    background-color: #FF7F00;
   }
 
   50% {
@@ -862,7 +881,7 @@ h3.orangeh3 {
   100% {
     height: 5px;
     width: 34px;
-    background-color: #0080FF;
+    background-color: #FF7F00;
   }
 }
 
@@ -897,3 +916,4 @@ h3.orangeh3 {
 #team .card:hover i {
   color: #fff;
 }
+
