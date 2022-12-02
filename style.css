@@ -648,9 +648,9 @@ a {
 }
 
 .containerfb {
-  
+  display: flex;
   margin: 0 auto;
-  width: 30%;
+  width: 100%;
 }
 
 .card h2 {
