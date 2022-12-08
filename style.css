@@ -924,6 +924,6 @@ h3.orangeh3 {
 
 
 .photocolumn {
-  flex:auto;
-  padding: 0px;
+  flex:20%;
+  padding:0%;
 }
