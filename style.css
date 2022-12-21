@@ -7,11 +7,6 @@ body {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 400;
   font-style: normal;
-
-
-
-
-
 }
 
 /* font-weight: 500; */
@@ -53,7 +48,7 @@ nav .items {
 nav div.items a {
   color: #333333;
   text-decoration: none;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: ofelia-text, sans-serif;
   text-align: center;
   display: block;
   margin: 0;
@@ -85,7 +80,7 @@ nav .burger {
   color: #333333;
   background-color: white;
   text-decoration: none;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: ofelia-text, sans-serif;
   text-align: center;
   display: block;
   margin: auto;
@@ -201,14 +196,14 @@ h1 {
   font-family: ofelia-text, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #333333;
+  color: #66B3FF;
   margin-bottom: 3vh;
   margin-top: 3vh;
   font-size: calc(32px + (56 - 32) * ((100vw - 320px) / (1600 - 320)));
 }
 
 h2 {
-  color: #333333;
+  color: #66B3FF;
   font-family: ofelia-text, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -218,13 +213,27 @@ h2 {
 }
 
 h3 {
-  color: #333333;
+  color: #66B3FF;
   font-family: ofelia-text, sans-serif;
   font-weight: 500;
   font-style: normal;
   margin-top: 4vh;
   margin-bottom: 4vh;
   font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));
+}
+h4 {
+  color: #66B3FF;
+  font-family: ofelia-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h5{
+  color: #66B3FF;
+  font-family: ofelia-text, sans-serif;
 }
 
 a {
@@ -451,7 +460,7 @@ header {
 
   /* cindy morgenthaler Logo */
   img.logo-menu {
-    width: 12vw;
+    width: 6vw;
   }
 
   .logo-style {
@@ -485,11 +494,7 @@ header {
 
 @media screen and (max-width: 800px) {
 
-  /* Galerie zwei anstatt vier Reihen */
-  .galerie-reihe {
-    flex: 40%;
-    max-width: 40%;
-  }
+
 
   /* Seiteninhalt-Breite */
   section.inhalt {
@@ -507,15 +512,6 @@ header {
     margin-bottom: 0.4vh;
   }
 
-  /* cindy morgenthaler logo */
-  .logo-style {
-    width: 20vw;
-    height: auto;
-    top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
 
   img.logo-menu {
     width: 1vh;
@@ -609,6 +605,8 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -621,6 +619,7 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 
 .flip-card-front {
   background-color: #bbb;
@@ -719,7 +718,7 @@ h2.orangeh2 {
 }
 
 
-h3.orangeh3 {
+h4.orangeh4 {
   color: white;
 }
 
@@ -790,13 +789,13 @@ h3.orangeh3 {
 /*--buchen*/
 
 .containerbuchen {
-  text-align: center;
+  text-align:center;
   padding: 10px;
   margin: 10px auto;
 }
 
 .elem {
-  margin: 50px;
+  margin: 2px;
 }
 
 
@@ -903,6 +902,7 @@ h3.orangeh3 {
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
 }
+/*
 
 #team .card:hover {
   background: #FF7F00;
@@ -916,13 +916,15 @@ h3.orangeh3 {
 #team .card:hover i {
   color: #fff;
 }
+*/
 
 .biografie P {
  text-align:left;
  color:#555
 }
 
-img {
+
+.pics_in_a_row img {
   width: 100%;
   height: auto;
   vertical-align: middle;
@@ -937,3 +939,12 @@ img {
 .img3 { flex: 1.51712328767; }
 .img4 { flex: 0.672; }
 .img5 { flex: 1.51712328767; }
+
+
+
+  .halfimg{
+   align-items: center;
+    width: 65%;
+    border-radius: 10px;
+  }
+  
