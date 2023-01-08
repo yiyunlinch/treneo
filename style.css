@@ -72,6 +72,7 @@ nav .burger {
   right: 10vw;
   font-size: 24px;
   padding: 8px;
+  color: #FF7f00;
   font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1600 - 320)));
 }
 
@@ -183,8 +184,7 @@ section.inhaltleft {
 }
 
 section.inhaltright {
-  display:flex 
-  width: 70%;
+  display: flex width: 70%;
   margin: auto;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -221,6 +221,7 @@ h3 {
   margin-bottom: 4vh;
   font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));
 }
+
 h4 {
   color: #66B3FF;
   font-family: ofelia-text, sans-serif;
@@ -231,7 +232,7 @@ h4 {
   font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));
 }
 
-h5{
+h5 {
   color: #66B3FF;
   font-family: ofelia-text, sans-serif;
 }
@@ -789,7 +790,7 @@ h4.orangeh4 {
 /*--buchen*/
 
 .containerbuchen {
-  text-align:center;
+  text-align: center;
   padding: 10px;
   margin: 10px auto;
 }
@@ -902,6 +903,7 @@ h4.orangeh4 {
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
 }
+
 /*
 
 #team .card:hover {
@@ -919,8 +921,8 @@ h4.orangeh4 {
 */
 
 .biografie P {
- text-align:left;
- color:#555
+  text-align: left;
+  color: #555
 }
 
 
@@ -934,17 +936,30 @@ h4.orangeh4 {
   display: flex;
 }
 
-.img1 { flex: 1.51712328767; }
-.img2 { flex: 1.51712328767; }
-.img3 { flex: 1.51712328767; }
-.img4 { flex: 0.672; }
-.img5 { flex: 1.51712328767; }
+.img1 {
+  flex: 1.51712328767;
+}
+
+.img2 {
+  flex: 1.51712328767;
+}
+
+.img3 {
+  flex: 1.51712328767;
+}
+
+.img4 {
+  flex: 0.672;
+}
+
+.img5 {
+  flex: 1.51712328767;
+}
 
 
 
-  .halfimg{
-   align-items: center;
-    width: 65%;
-    border-radius: 10px;
-  }
-  
+.halfimg {
+  align-items: center;
+  width: 65%;
+  border-radius: 10px;
+}
