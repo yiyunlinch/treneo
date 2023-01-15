@@ -68,7 +68,7 @@ nav div.items a.active {
 
 nav .burger {
   position: absolute;
-  
+
   top: 1vh;
   right: 10vw;
   font-size: 24px;
@@ -163,7 +163,7 @@ section.inhalt {
 }
 
 section.inhaltleft {
-  
+
   width: 70%;
   margin: auto;
   padding-top: 2vh;
@@ -172,15 +172,15 @@ section.inhaltleft {
 }
 
 section.inhaltright {
- 
+
   width: 70%;
   margin: auto;
   padding-top: 2vh;
   padding-bottom: 2vh;
- 
-  text-align:start;
-  
-  
+
+  text-align: start;
+
+
 }
 
 /* Überschriften und Lauftext */
@@ -396,6 +396,7 @@ textarea {
   font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
   margin-top: 0.5vh;
 }
+
 
 /* Instagram Logo */
 img.socialmedia {
@@ -642,18 +643,19 @@ h2.orangeh2 {
 
 h5.orangeh5 {
   color: white;
-  
+
 }
 
-.orangebackground
-{background-color: #FF7F00;
+.orangebackground {
+  background-color: #FF7F00;
   color: white;
-  
+
   padding: 18px;
   width: 100%;
   text-align: center;
   border: none;
-  outline: none;}
+  outline: none;
+}
 
 
 
@@ -663,17 +665,17 @@ h5.orangeh5 {
 /*contentunderorange*/
 
 .floatright {
-  float:right;
+  float: right;
   border: 1px dotted white;
   margin: 0px 0px 15px 50px;
-  
+
 }
 
 .floatleft {
   float: left;
   border: 1px dotted white;
   margin: 0px 50px 15px 0px;
-  
+
 }
 
 
@@ -742,12 +744,12 @@ h5.orangeh5 {
   align-items: center;
   width: 65%;
   border-radius: 10px;
-  
+
 }
 
 .halfimgleft {
   align-items: center;
   width: 65%;
   border-radius: 10px;
-  
+
 }
