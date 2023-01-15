@@ -165,7 +165,8 @@ section.inhalt {
 section.inhaltleft {
 
   width: 70%;
-  margin: auto;
+  margin-left: 15%;
+  margin-right: 15%;
   padding-top: 2vh;
   padding-bottom: 2vh;
   text-align: left;
@@ -174,7 +175,8 @@ section.inhaltleft {
 section.inhaltright {
 
   width: 70%;
-  margin: auto;
+  margin-left: 15%;
+  margin-right: 15%;
   padding-top: 2vh;
   padding-bottom: 2vh;
 
@@ -494,10 +496,6 @@ header {
 
   /* Seiteninhalt-Breite */
   section.inhalt {
-    width: 60vw;
-  }
-
-  section.inhaltleft {
     width: 60vw;
   }
 
