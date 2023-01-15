@@ -163,22 +163,24 @@ section.inhalt {
 }
 
 section.inhaltleft {
-
-
-
+  
   width: 70%;
   margin: auto;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  text-align: auto;
+  text-align: left;
 }
 
 section.inhaltright {
-  display: flex width: 70%;
+ 
+  width: 70%;
   margin: auto;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  text-align: auto;
+ 
+  text-align:start;
+  
+  
 }
 
 /* Überschriften und Lauftext */
@@ -661,15 +663,17 @@ h5.orangeh5 {
 /*contentunderorange*/
 
 .floatright {
-  float: right;
+  float:right;
   border: 1px dotted white;
-  margin: 0px 0px 15px 20px;
+  margin: 0px 0px 15px 50px;
+  border-radius: 10px;
 }
 
 .floatleft {
   float: left;
   border: 1px dotted white;
-  margin: 0px 0px 15px 20px;
+  margin: 0px 50px 15px 0px;
+  border-radius: 10px;
 }
 
 
@@ -745,5 +749,5 @@ h5.orangeh5 {
   align-items: center;
   width: 65%;
   border-radius: 10px;
-  clear:left;
+  
 }
