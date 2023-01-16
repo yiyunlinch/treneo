@@ -716,6 +716,7 @@ h5.orangeh5 {
 
 .pics_in_a_row {
   display: flex;
+  margin-top:5em;
 }
 
 .img1 {
