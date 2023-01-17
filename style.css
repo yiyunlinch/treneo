@@ -167,6 +167,8 @@ section.inhaltleft {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
   text-align: left;
@@ -177,6 +179,8 @@ section.inhaltright {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
 
@@ -667,14 +671,14 @@ h5.orangeh5 {
 .floatright {
   float: right;
   border: 1px dotted white;
-  margin: 0px 0px 15px 50px;
+  margin: 0px 0px 2em 5em;
 
 }
 
 .floatleft {
   float: left;
   border: 1px dotted white;
-  margin: 0px 50px 15px 0px;
+  margin: 0px 5em 2em 0px;
 
 }
 
@@ -712,6 +716,7 @@ h5.orangeh5 {
   width: 100%;
   height: auto;
   vertical-align: middle;
+  margin-top: 2em;
 }
 
 .pics_in_a_row {
